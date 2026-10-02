@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MAUM — 카드 만들기</title>
+  <meta name="description" content="카드와 서체를 고르고 메시지를 적어보세요">
+  <link rel="stylesheet" href="style.css?v=20261002c">
+</head>
+
+<body class="page-create">
+  <a class="skip" href="#main">본문 바로가기</a>
+
+  <header class="nav nav-light">
+    <a class="logo" href="index.html">MAUM<sup>°</sup></a>
+    <ol class="steps" aria-label="진행 단계">
+      <li><a href="index.html">시작</a></li>
+      <li class="now" aria-current="step">만들기</li>
+      <li>완료</li>
+    </ol>
+    <a class="btn btn-dark btn-sm" href="index.html">← 처음으로</a>
+  </header>
+
+  <main id="main" class="create-wrap">
+    <p class="sec-kicker">카드 만들기</p>
+    <h1>누구에게 전할까요?</h1>
+    <p class="create-sub">카드와 서체를 고르고 메시지를 적어주세요. 고르는 대로 오른쪽에 보여드려요.</p>
+
+    <form class="create-grid" action="success.html" method="get">
+      <div class="editor">
+
+        <fieldset class="panel">
+          <legend class="sr-only">카드 선택. 필수 항목입니다.</legend>
+          <div class="panel-head" aria-hidden="true">
+            <span class="panel-num">01</span>
+            <span class="panel-text"><strong>카드 선택 <em>필수</em></strong><span>받는 사람의 오늘에 어울리는 한 장을 고르세요.</span></span>
+          </div>
+          <div class="card-options">
+            <div class="opt">
+              <input type="radio" id="card-1" name="card" value="birthday" required>
+              <label for="card-1" class="pick pick-birthday"><span class="pick-tag">01 Birthday</span><span
+                  class="pick-big">생일 축하해!</span><span class="pick-sub">생일 · 파티</span><span class="pick-check"
+                  aria-hidden="true">✓</span></label>
+            </div>
+            <div class="opt">
+              <input type="radio" id="card-2" name="card" value="thanks">
+              <label for="card-2" class="pick pick-thanks"><span class="pick-tag">02 Thank you</span><span
+                  class="pick-big">고마워요</span><span class="pick-sub">감사 · 일상</span><span class="pick-check"
+                  aria-hidden="true">✓</span></label>
+            </div>
+            <div class="opt">
+              <input type="radio" id="card-3" name="card" value="love">
+              <label for="card-3" class="pick pick-love"><span class="pick-tag">03 Love</span><span
+                  class="pick-big">사랑해요</span><span class="pick-sub">연인 · 기념일</span><span class="pick-check"
+                  aria-hidden="true">✓</span></label>
+            </div>
+            <div class="opt">
+              <input type="radio" id="card-4" name="card" value="comfort">
+              <label for="card-4" class="pick pick-comfort"><span class="pick-tag">04 Comfort</span><span
+                  class="pick-big">괜찮아요</span><span class="pick-sub">위로 · 휴식</span><span class="pick-check"
+                  aria-hidden="true">✓</span></label>
+            </div>
+            <div class="opt">
+              <input type="radio" id="card-5" name="card" value="congrats">
+              <label for="card-5" class="pick pick-congrats"><span class="pick-tag">05 Congrats</span><span
+                  class="pick-big">합격 축하해</span><span class="pick-sub">합격 · 졸업</span><span class="pick-check"
+                  aria-hidden="true">✓</span></label>
+            </div>
+            <div class="opt">
+              <input type="radio" id="card-6" name="card" value="cheer">
+              <label for="card-6" class="pick pick-cheer"><span class="pick-tag">06 Cheer up</span><span
+                  class="pick-big">너라면 돼!</span><span class="pick-sub">시험 · 도전</span><span class="pick-check"
+                  aria-hidden="true">✓</span></label>
+            </div>
+          </div>
+        </fieldset>
+
+        <fieldset class="panel">
+          <legend class="sr-only">서체 선택. 필수 항목입니다.</legend>
+          <div class="panel-head" aria-hidden="true">
+            <span class="panel-num">02</span>
+            <span class="panel-text"><strong>서체 선택 <em>필수</em></strong><span>글씨체가 마음의 온도를 바꿔요.</span></span>
+          </div>
+          <div class="font-options">
+            <div class="opt">
+              <input type="radio" id="font-1" name="font" value="hand" required>
+              <label for="font-1" class="fpick"><span class="fpick-name hand">손글씨 <i>Aa</i></span><span
+                  class="fpick-desc">따뜻하고 친근하게</span><span class="fpick-ex hand">오늘도 잘하고 있어!</span></label>
+            </div>
+            <div class="opt">
+              <input type="radio" id="font-2" name="font" value="serif">
+              <label for="font-2" class="fpick"><span class="fpick-name serif">명조 <i>Aa</i></span><span
+                  class="fpick-desc">차분하고 깊게</span><span class="fpick-ex serif">진심으로 감사드립니다.</span></label>
+            </div>
+            <div class="opt">
+              <input type="radio" id="font-3" name="font" value="sans">
+              <label for="font-3" class="fpick"><span class="fpick-name">고딕 <i>Aa</i></span><span
+                  class="fpick-desc">담백하고 또렷하게</span><span class="fpick-ex">생일 축하해, 지민아!</span></label>
+            </div>
+          </div>
+        </fieldset>
+
+        <section class="panel" aria-labelledby="t-msg">
+          <div class="panel-head">
+            <span class="panel-num" aria-hidden="true">03</span>
+            <div class="panel-text">
+              <h2 id="t-msg">메시지 쓰기 <em>필수</em></h2>
+              <p>짧아도 괜찮아요. 진심이면 충분하니까요.</p>
+            </div>
+          </div>
+          <div class="field-row">
+            <label class="field">받는 사람<input type="text" name="to" placeholder="예) 지민아" maxlength="20"
+                autocomplete="off" enterkeyhint="next" required></label>
+            <label class="field">보내는 사람<input type="text" name="from" placeholder="예) 수아가" maxlength="20"
+                autocomplete="off" enterkeyhint="next" required></label>
+          </div>
+          <label class="field">카드에 담을 메시지
+            <textarea name="message" placeholder="예) 올해도 네 생일을 함께해서 행복해. 오늘은 네가 주인공이니까 먹고 싶은 거 다 먹자!" required
+              minlength="2" maxlength="300" rows="5"></textarea>
+          </label>
+        </section>
+
+      </div>
+
+      <aside class="preview" aria-label="미리보기">
+        <div class="preview-sticky">
+          <p class="preview-kicker">미리보기</p>
+          <div class="preview-card">
+            <p class="pv-tag" aria-hidden="true"></p>
+            <p class="pv-to">To. 소중한 당신에게</p>
+            <p class="pv-msg">여기에<br>당신의 마음이<br>담깁니다.</p>
+            <p class="pv-from">from. MAUM</p>
+          </div>
+          <ul class="preview-tips">
+            <li>카드를 고르면 배경이 바뀌어요</li>
+            <li>서체를 고르면 글씨가 바뀌어요</li>
+          </ul>
+        </div>
+      </aside>
+
+      <div class="send-bar">
+        <div class="progress" aria-hidden="true">
+          <p class="progress-label"></p>
+          <div class="progress-track"><span class="progress-fill"></span></div>
+        </div>
+        <button class="btn btn-coral btn-lg send-btn" type="submit">카드 보내기 →</button>
+      </div>
+    </form>
+  </main>
+
+  <footer class="footer light">
+    <p class="logo">MAUM<sup>°</sup></p>
+    <p><a href="index.html">처음으로 돌아가기</a></p>
+  </footer>
+
+</body>
+
+</html>
